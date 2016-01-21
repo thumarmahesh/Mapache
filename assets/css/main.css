@@ -627,8 +627,7 @@ code {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex; }
-    .menu-link.active,
-    .menu-link:hover {
+    .menu-link.active, .menu-link:hover {
       background-color: #e7e7e7; }
   .menu-text {
     overflow: hidden;
@@ -643,6 +642,7 @@ code {
   left: 0;
   position: fixed;
   right: 0;
+  top: 0;
   z-index: 50; }
   .header [class^="icon-"]:before,
   .header [class*=" icon-"]:before {
@@ -658,8 +658,7 @@ code {
     -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
     flex: 1 0 auto; }
-    .header-topbar-right,
-    .header-topbar-left {
+    .header-topbar-right, .header-topbar-left {
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
@@ -850,7 +849,7 @@ code {
   border-radius: 50%;
   height: 48px;
   text-align: center;
-  transition: background 0.3s;
+  transition: background .3s;
   width: 48px;
   line-height: 48px;
   font-size: 24px; }
@@ -1019,7 +1018,7 @@ code {
       background: #E3E6E3;
       color: #3e433e;
       display: block;
-      margin: 0 0 0.5em;
+      margin: 0 0 .5em;
       text-transform: capitalize; }
       .ps .ps-tags a:hover {
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
@@ -1080,7 +1079,7 @@ code {
       font-size: .80em;
       height: 36px;
       line-height: 36px;
-      padding: 0 0.67em;
+      padding: 0 .67em;
       position: absolute;
       text-align: center;
       top: 2.2em;
@@ -1170,7 +1169,7 @@ code {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font: 500 14px/20px Roboto, sans-serif;
+  font: 500 14px/20px Roboto,sans-serif;
   height: 36px;
   letter-spacing: .5px;
   line-height: 36px;
@@ -1198,12 +1197,10 @@ code {
     background: #5cb85c !important; }
   .btn.link {
     background: #4285f4 !important; }
-  .btn.download,
-  .btn.link {
+  .btn.download, .btn.link {
     padding-left: 20px;
     padding-right: 20px; }
-    .btn.download i,
-    .btn.link i {
+    .btn.download i, .btn.link i {
       margin-right: 5px; }
   .btn.btn-circle {
     border-radius: 50%;
@@ -1362,7 +1359,7 @@ code {
     background: #4285f4 !important; }
   .prev-next-link:hover {
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.24), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    transition: box-shadow 0.2s ease-in;
+    transition: box-shadow .2s ease-in;
     opacity: .97; }
   .prev-next-link:after {
     background: rgba(0, 0, 0, 0.34);

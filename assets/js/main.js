@@ -52,8 +52,10 @@
       $('.autocomplete').css({display:'block'});
     })
     .blur(function(){
-      $gd_search.removeClass('has-focus');
-      $('.autocomplete').removeAttr('style');
+      setTimeout(function() {
+        $gd_search.removeClass('has-focus');
+        $('.autocomplete').removeAttr('style');
+      },100);
     });
 
 
@@ -150,7 +152,7 @@
     results: '#search-result',
     zeroResultsInfo   : false,
     displaySearchInfo : false,
-    result_template   : '<a href={{link}}">{{title}}</a>',
+    result_template   : '<a href="{{link}}">{{title}}</a>',
     onKeyUp           : true,
     rss               : "/rss"
   });
